@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DetailUser</class>
+ <widget class="QDialog" name="DetailUser">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>806</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="btn_ok">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>520</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>54</y>
+     <width>741</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_15">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="lbl_name">
+          <property name="text">
+           <string>Name : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_name">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="lbl_username">
+          <property name="text">
+           <string>Username : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_username">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="lbl_money">
+          <property name="text">
+           <string>Money : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="spb_money">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="maximum">
+           <double>100000000.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="lbl_email">
+          <property name="text">
+           <string>Email : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_email">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="lbl_date_last_enter">
+          <property name="text">
+           <string>Date of last Enter : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_last_enter">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="lbl_state">
+          <property name="text">
+           <string>State : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cmb_state">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="editable">
+           <bool>false</bool>
+          </property>
+          <property name="duplicatesEnabled">
+           <bool>false</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>Tehran</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ardabil</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azerbaijan, East</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Azerbaijan, West</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bushehr</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Chahar Mahaal and Bakhtiari</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Fars</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Gilan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Golestan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hamadan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hormozgan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ilam</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Isfahan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kerman</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kermanshah</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Khorasan, North</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Khorasan, Razavi</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Khorasan, South</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Khuzestan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kohgiluyeh and Boyer-Ahmad</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Kurdistan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Lorestan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Markazi</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Mazandaran</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Qazvin</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Qom</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Semnan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sistan and Baluchestan</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Alborz</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Yazd</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Zanjan</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="lbl_address">
+          <property name="text">
+           <string>Address : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_address">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="lbl_lastname">
+          <property name="text">
+           <string>Lastname : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_lastname">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="lbl_mobilenumber">
+          <property name="text">
+           <string>Mobile number : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_mobilenumber">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="lbl_postcode">
+          <property name="text">
+           <string>Post code : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_postcode">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QLabel" name="lbl_date_create">
+          <property name="text">
+           <string>Date of Create : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_create">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QLabel" name="lbl_date_last_exit">
+          <property name="text">
+           <string>Date of last Exit : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_last_exit">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="lbl_city">
+          <property name="text">
+           <string>City : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_city">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QLabel" name="lbl_company">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string>Company name : </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="led_companyname">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

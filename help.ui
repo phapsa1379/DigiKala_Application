@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>help</class>
+ <widget class="QDialog" name="help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1070</width>
+    <height>679</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Help</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="files.qrc">
+    <normaloff>:/icon/images/icons8-help-96.png</normaloff>:/icon/images/icons8-help-96.png</iconset>
+  </property>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>11</y>
+     <width>1041</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:48pt; font-weight:600; color:#ff0000;&quot;&gt;HELP&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt;1-&lt;/span&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600;&quot;&gt;If you registered enter your username and password and then click on &lt;/span&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt;Sign in.&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt;2-&lt;/span&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600;&quot;&gt;If you didn’t register click on &lt;/span&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt;Sign up.&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt;3-&lt;/span&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600;&quot;&gt;If you forgot your password click on &lt;/span&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt;Forgot Password.&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt;4-&lt;/span&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600;&quot;&gt;If you want to close this window you can click on &lt;/span&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt;Exit &lt;/span&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600;&quot;&gt;on menu &lt;/span&gt;&lt;span style=&quot; font-family:'Blackadder ITC'; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="qpb_close">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>620</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="files.qrc"/>
+ </resources>
+ <connections/>
+</ui>

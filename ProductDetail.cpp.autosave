@@ -1,0 +1,157 @@
+#include "ProductDetail.h"
+#include "ui_ProductDetail.h"
+#include "Global.h"
+#include <QGridLayout>
+#include <QLabel>
+#include <QPushButton>
+#include "DialogBuy.h"
+#include <QMessageBox>
+
+Product p;
+
+ProductDetail::ProductDetail(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::ProductDetail)
+{
+    ui->setupUi(this);
+
+    NodeProduct &temp = PRODUCT_LIST.getByKey(KEY_PRODUCT);
+
+    p.setViewNumber(p.getViewNumber() + 1);
+    temp.setData(p);
+
+    QGridLayout * mainLayout = new QGridLayout;
+
+    QLabel *nameL = new QLabel("Name: " + p.getName());
+    mainLayout->addWidget(nameL, 0, 0);
+
+    QLabel *registerationDateL = new QLabel("Registeration Date: " + p.getDateOfRegister());
+    mainLayout->addWidget(registerationDateL, 1, 0);
+
+    QLabel *colorL = new QLabel("Color: " + p.getColor());
+    mainLayout->addWidget(colorL, 2, 0);
+    
+    
+    
+    
+
+    QLabel *stateL = new QLabel("State: " + p.getState());
+    mainLayout->addWidget(stateL, 3, 0);
+
+    QLabel *ratingL = new QLabel("Rating: " + p.getDateOfRegister());
+    mainLayout->addWidget(ratingL, 4, 0);
+
+    int i = 5;
+
+    float offPercent = p.getOffPercent();
+    if (offPercent > 0){
+        QLabel *offPercentL = new QLabel("Off Percent: " + QString::number(offPercent));
+        mainLayout->addWidget(offPercentL, i++, 0);
+    }
+    QLabel *priceL = new QLabel("Price: " + QString::number(p.getPureSellPrice()));
+    mainLayout->addWidget(priceL, i++, 0);
+
+
+
+
+
+
+
+    QLabel *availableNumberL = new QLabel("AvailableNumber: " + QString::number(p.getAvailableNumber()));
+    mainLayout->addWidget(availableNumberL, i++, 0);
+
+    QLabel *soldNumberL = new QLabel("Sold Number: " + QString::number(p.getSoldNumber()));
+    mainLayout->addWidget(soldNumberL, i++, 0);
+
+    QLabel *viewNumberL = new QLabel("ViewNumber: " +QString::number( p.getViewNumber()));
+    mainLayout->addWidget(viewNumberL, i++, 0);
+
+
+    if (!p.getCreator().isEmpty()){
+        QLabel *creatorL = new QLabel("Creator: " + p.getCreator());
+        mainLayout->addWidget(creatorL, i++, 0);
+    }
+
+    if (!p.getDateOfCreation().isEmpty()){
+        QLabel *dateOfCreationL = new QLabel("Date Of Creation: " + p.getDateOfCreation());
+        mainLayout->addWidget(dateOfCreationL, i++, 0);
+    }
+
+    if (!p.getDescription().isEmpty()){
+        QLabel *descriptionL = new QLabel("Description: " + p.getDescription());
+        mainLayout->addWidget(descriptionL, i++, 0);
+    }
+
+    QPushButton *likedB = new QPushButton("Add To Favorites");
+    mainLayout->addWidget(likedB, i, 0);
+    
+  
+    bool showOptions = true;
+    
+    if (p.getKeySeller() != KEY_USER){
+        showOptions = false;
+    }
+    
+    if (TYPE_USER == DEALER){
+        if ()
+    }
+    if (showOptions && )
+        
+    
+    
+    QPushButton *buyB = new QPushButton("Buy");
+    mainLayout->addWidget(buyB, i, 1);
+
+    
+    QPushButton *chatB = new QPushButton("Chat With Owner");
+    mainLayout->addWidget(chatB, i, 2);
+
+    
+
+
+
+    setLayout(mainLayout);
+
+    mainLayout->setSizeConstraint(QLayout::SetMinimumSize);
+
+    connect(buyB, SIGNAL(clicked(bool)), this, SLOT(on_btn_buyB_Clicked(bool)));
+
+
+}
+
+ProductDetail::~ProductDetail()
+{
+    delete ui;
+}
+
+
+void ProductDetail::on_btn_buyB_Clicked(bool){
+
+    DialogBuy d;
+    d.setModal(true);
+    d.exec();
+
+
+}
+void ProductDetail::on_btn_contactB_Clicked(bool){
+
+
+}
+void ProductDetail::on_btn_likedB_Clicked(bool){
+
+    if (TYPE_USER == DEALER){
+        TNodeUser<Dealer>& d_node = DEALER_LIST.getByKey(KEY_USER);
+        Dealer d_data = d_node.getData();
+        d_data.addKeyToListOfBuyBefore(p);
+    }
+
+    if (TYPE_USER == USER){
+        TNodeUser<Users>& d_node = USER_LIST.getByKey(KEY_USER);
+        Users d_data = d_node.getData();
+        d_data.addKeyToListOfBuyBefore(p);
+    }
+
+
+    QMessageBox::information(this, "Done", "Product added to favorite list.");
+
+}

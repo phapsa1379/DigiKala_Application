@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>personal_page2</class>
+ <widget class="QMainWindow" name="personal_page2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1154</width>
+    <height>746</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1154</width>
+    <height>746</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1154</width>
+    <height>746</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Personal Page-&gt;Dealer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="files.qrc">
+    <normaloff>:/icon/images/icons8-shopping-bag-96.png</normaloff>:/icon/images/icons8-shopping-bag-96.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(238, 238, 238);
+background-image: url(:/icon/images/back7.PNG);</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1154</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBought_Basket">
+    <property name="title">
+     <string>Bought Basket</string>
+    </property>
+    <addaction name="actionBought_Basket"/>
+   </widget>
+   <widget class="QMenu" name="menuProfile">
+    <property name="title">
+     <string>Profile</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionView_Account"/>
+    <addaction name="separator"/>
+    <addaction name="actionEdit_Profile"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionFavourites"/>
+    <addaction name="separator"/>
+    <addaction name="actionSign_Out_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_Goods"/>
+    <addaction name="separator"/>
+    <addaction name="actionSales_List"/>
+   </widget>
+   <widget class="QMenu" name="menuCategories_Of_Goods">
+    <property name="title">
+     <string>Categories Of Goods</string>
+    </property>
+    <widget class="QMenu" name="menuHealth_Make_up">
+     <property name="title">
+      <string>Health , Make up</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionHealth"/>
+     <addaction name="separator"/>
+     <addaction name="actionMake_up"/>
+    </widget>
+    <widget class="QMenu" name="menuCar_Office_Equipment">
+     <property name="title">
+      <string>Car , Office Equipment</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionCar"/>
+     <addaction name="separator"/>
+     <addaction name="actionOffice_Equipment"/>
+    </widget>
+    <widget class="QMenu" name="menuHouse_Kitchen">
+     <property name="title">
+      <string>House , Kitchen</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionHouse"/>
+     <addaction name="separator"/>
+     <addaction name="actionKitchen"/>
+    </widget>
+    <widget class="QMenu" name="menuBook_Art_Stationary">
+     <property name="title">
+      <string>Book , Art , Stationery</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionBook"/>
+     <addaction name="separator"/>
+     <addaction name="actionArt"/>
+     <addaction name="separator"/>
+     <addaction name="actionStationary"/>
+    </widget>
+    <widget class="QMenu" name="menuToys_Children">
+     <property name="title">
+      <string>Toys , Children</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionToys"/>
+     <addaction name="separator"/>
+     <addaction name="actionChildren"/>
+    </widget>
+    <widget class="QMenu" name="menuSport_Trip">
+     <property name="title">
+      <string>Sport , Trip</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionSport"/>
+     <addaction name="separator"/>
+     <addaction name="actionTrip"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="actionDigital"/>
+    <addaction name="separator"/>
+    <addaction name="menuHealth_Make_up"/>
+    <addaction name="separator"/>
+    <addaction name="menuCar_Office_Equipment"/>
+    <addaction name="separator"/>
+    <addaction name="actionClothes"/>
+    <addaction name="separator"/>
+    <addaction name="menuHouse_Kitchen"/>
+    <addaction name="separator"/>
+    <addaction name="menuBook_Art_Stationary"/>
+    <addaction name="separator"/>
+    <addaction name="menuToys_Children"/>
+    <addaction name="separator"/>
+    <addaction name="menuSport_Trip"/>
+    <addaction name="separator"/>
+    <addaction name="actionNutrition"/>
+    <addaction name="separator"/>
+    <addaction name="actionTotal_list_of_goods"/>
+   </widget>
+   <widget class="QMenu" name="menucommon_questions">
+    <property name="title">
+     <string>FAQ</string>
+    </property>
+    <addaction name="actionCommon_Questions"/>
+   </widget>
+   <widget class="QMenu" name="menuDiscounts_Offers">
+    <property name="title">
+     <string>Discounts and Offers</string>
+    </property>
+    <addaction name="actionDiscounts_and_Offers"/>
+   </widget>
+   <widget class="QMenu" name="menuMessage">
+    <property name="title">
+     <string>Message</string>
+    </property>
+    <addaction name="actionChats"/>
+   </widget>
+   <widget class="QMenu" name="menuView_Report">
+    <property name="title">
+     <string>View Report</string>
+    </property>
+    <addaction name="actionView_Report"/>
+   </widget>
+   <addaction name="menuBought_Basket"/>
+   <addaction name="menuProfile"/>
+   <addaction name="menuCategories_Of_Goods"/>
+   <addaction name="menuMessage"/>
+   <addaction name="menucommon_questions"/>
+   <addaction name="menuDiscounts_Offers"/>
+   <addaction name="menuView_Report"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionBought_Basket"/>
+   <addaction name="actionView_Account"/>
+   <addaction name="actionEdit_Profile"/>
+   <addaction name="actionFavourites"/>
+   <addaction name="actionAdd_Goods"/>
+   <addaction name="actionSales_List"/>
+   <addaction name="actionChats"/>
+   <addaction name="actionCommon_Questions"/>
+   <addaction name="actionDiscounts_and_Offers"/>
+   <addaction name="actionView_Report"/>
+   <addaction name="actionSign_Out_2"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionTotal_list_of_goods"/>
+   <addaction name="actionDigital"/>
+   <addaction name="actionHealth"/>
+   <addaction name="actionMake_up"/>
+   <addaction name="actionCar"/>
+   <addaction name="actionOffice_Equipment"/>
+   <addaction name="actionHouse"/>
+   <addaction name="actionKitchen"/>
+   <addaction name="actionBook"/>
+   <addaction name="actionArt"/>
+   <addaction name="actionStationary"/>
+   <addaction name="actionToys"/>
+   <addaction name="actionChildren"/>
+   <addaction name="actionSport"/>
+   <addaction name="actionTrip"/>
+   <addaction name="actionNutrition"/>
+  </widget>
+  <action name="actionView_Account">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/001_54.ico</normaloff>:/icon/images/001_54.ico</iconset>
+   </property>
+   <property name="text">
+    <string>View Account</string>
+   </property>
+  </action>
+  <action name="actionEdit_Profile">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/001_45.ico</normaloff>:/icon/images/001_45.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Profile</string>
+   </property>
+  </action>
+  <action name="actionBought_Basket">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/001_48.ico</normaloff>:/icon/images/001_48.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Bought Basket</string>
+   </property>
+   <property name="iconText">
+    <string>Bought Basket</string>
+   </property>
+  </action>
+  <action name="actionFavourites">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/001_14.ico</normaloff>:/icon/images/001_14.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Favourites</string>
+   </property>
+  </action>
+  <action name="actionSign_Out_2">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/001_60.gif</normaloff>:/icon/images/001_60.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Sign Out</string>
+   </property>
+  </action>
+  <action name="actionDigital">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-laptop-96.png</normaloff>:/icon/images/icons8-laptop-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Digital</string>
+   </property>
+  </action>
+  <action name="actionClothes">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-womens-t-shirt-200.png</normaloff>:/icon/images/icons8-womens-t-shirt-200.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clothes</string>
+   </property>
+  </action>
+  <action name="actionNutrition">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-vegetarian-food-96.png</normaloff>:/icon/images/icons8-vegetarian-food-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nutrition</string>
+   </property>
+  </action>
+  <action name="actionHealth">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-healthy-eating-200-1.png</normaloff>:/icon/images/icons8-healthy-eating-200-1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Health</string>
+   </property>
+  </action>
+  <action name="actionMake_up">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-cosmetic-brush-96.png</normaloff>:/icon/images/icons8-cosmetic-brush-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Make up</string>
+   </property>
+  </action>
+  <action name="actionCar">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-car-96.png</normaloff>:/icon/images/icons8-car-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Car</string>
+   </property>
+  </action>
+  <action name="actionOffice_Equipment">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-printer-maintenance-96.png</normaloff>:/icon/images/icons8-printer-maintenance-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Office Equipment</string>
+   </property>
+  </action>
+  <action name="actionHouse">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-house-96.png</normaloff>:/icon/images/icons8-house-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>House</string>
+   </property>
+  </action>
+  <action name="actionKitchen">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-ingredients-96.png</normaloff>:/icon/images/icons8-ingredients-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kitchen</string>
+   </property>
+  </action>
+  <action name="actionBook">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-orange-book-96.png</normaloff>:/icon/images/icons8-orange-book-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Book</string>
+   </property>
+  </action>
+  <action name="actionArt">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-art-prices-96-1.png</normaloff>:/icon/images/icons8-art-prices-96-1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Art</string>
+   </property>
+  </action>
+  <action name="actionStationary">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-stationery-96.png</normaloff>:/icon/images/icons8-stationery-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stationery</string>
+   </property>
+  </action>
+  <action name="actionToys">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-rocking-horse-96.png</normaloff>:/icon/images/icons8-rocking-horse-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Toys</string>
+   </property>
+  </action>
+  <action name="actionChildren">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-children-96.png</normaloff>:/icon/images/icons8-children-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Children</string>
+   </property>
+  </action>
+  <action name="actionSport">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-tennis-racquet-80.png</normaloff>:/icon/images/icons8-tennis-racquet-80.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sport</string>
+   </property>
+  </action>
+  <action name="actionTrip">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-around-the-globe-100.png</normaloff>:/icon/images/icons8-around-the-globe-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trip</string>
+   </property>
+  </action>
+  <action name="actionCommon_Questions">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/Aide.png</normaloff>:/icon/images/Aide.png</iconset>
+   </property>
+   <property name="text">
+    <string>Frequently Asked Questions</string>
+   </property>
+  </action>
+  <action name="actionDiscounts_and_Offers">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/Leopard Icon (109).png</normaloff>:/icon/images/Leopard Icon (109).png</iconset>
+   </property>
+   <property name="text">
+    <string>Discounts and Offers</string>
+   </property>
+  </action>
+  <action name="actionTotal_list_of_goods">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-buying-96.png</normaloff>:/icon/images/icons8-buying-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Total list of goods</string>
+   </property>
+  </action>
+  <action name="actionAdd_Goods">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-add-96.png</normaloff>:/icon/images/icons8-add-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Goods</string>
+   </property>
+  </action>
+  <action name="actionSales_List">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-total-sales-200.png</normaloff>:/icon/images/icons8-total-sales-200.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sales List</string>
+   </property>
+  </action>
+  <action name="actionChats">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/chat3.png</normaloff>:/icon/images/chat3.png</iconset>
+   </property>
+   <property name="text">
+    <string>Chats</string>
+   </property>
+  </action>
+  <action name="actionView_Report">
+   <property name="icon">
+    <iconset resource="files.qrc">
+     <normaloff>:/icon/images/icons8-error-64.png</normaloff>:/icon/images/icons8-error-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>View Report</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="files.qrc"/>
+ </resources>
+ <connections/>
+</ui>
